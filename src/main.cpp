@@ -1,7 +1,7 @@
 #include "geolocation.h"
-#include "include/rapidjson/document.h"
-#include "include/rapidjson/writer.h"
-#include "include/rapidjson/stringbuffer.h"
+#include "../include/rapidjson/document.h"
+#include "../include/rapidjson/writer.h"
+#include "../include/rapidjson/stringbuffer.h"
 #include <fstream>
 #include <string>
 
@@ -26,7 +26,7 @@ std::map<std::string,std::string> loadASCIIArt(std::array<std::string, 7> weathe
 
 
 int main(){
-    std::string weatherToken = "<TOKEN>";
+  std::string weatherToken = "<TOKEN>"; // get the token from the api website
     // TODO : read it from database. right now they are hardcoded..
     std::array<std::string, 7> weatherCategories = {"Thunderstorm", "Clear", "Clouds", "Drizzle","Rain", "Snow", "Atmosphere"};
     std::map<int,std::string> weatherCodenames{{200, "Thunderstorm"},{201, "Thunderstorm"}, {202, "Thunderstorm"},{210, "Thunderstorm" },{211,"Thunderstorm" },{212,"Thunderstorm"},{221,"Thunderstorm"},{230, "Thunderstorm"},{231,"Thunderstorm"},{232,"Thunderstorm"},

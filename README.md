@@ -5,6 +5,19 @@ dependencies:
  - RapidJSON
  - Boost.beast
  
+# Building
+In order to build this project, follow these steps:
+1. Sign up on free on [OpenWeatherMap](openweathermap.org/) and get a token.
+2. Replace the token you recived by "<Token>" in main function.
+3. Download [RapidJSON](https://github.com/Tencent/rapidjson) and put its `include` directory in the root of the project.
+4. Install latest version of [Boost lirary](https://www.boost.org/).
+5. Create a directory called `build` and `cd` into it and run (without $): 
+```
+$ cmake ...
+make
+```
+6. Now you have `weatherFetcher` compiled and ready to use and to be added to your `.bashrc` file.
+
 example output:
 
 ```text
@@ -83,5 +96,4 @@ ______
            \\
             \\
 ```
-
 

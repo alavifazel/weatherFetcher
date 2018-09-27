@@ -10,7 +10,7 @@ In order to build this project, follow these steps:
 1. Sign up on free on [OpenWeatherMap](openweathermap.org/) and get a token.
 2. Replace the token you recived by `<Token>` in main function.
 3. Download [RapidJSON](https://github.com/Tencent/rapidjson) and put its `include` directory in the root of the project.
-4. Install latest version of [Boost library](https://www.boost.org/).
+4. Install the latest version of [Boost library](https://www.boost.org/).
 5. Create a directory called `build` in the project's root and `cd` into it and run (without $): 
 ```
 $ cmake ...
